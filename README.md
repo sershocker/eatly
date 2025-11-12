@@ -1,4 +1,4 @@
-<img src="" align="right">
+<img src="https://raw.githubusercontent.com/sershocker/eatly/81fee7da2bf5a22af4994a2a6a05323fdd8cf5df/images/Logo.svg" align="right">
 
 # eatly
 
