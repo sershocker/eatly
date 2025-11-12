@@ -1,11 +1,11 @@
 @use "constants" as *;
 @use "sass:math";
 
-@function fluid($max: 64, $min: 18, $isEndOfLaptop: false) {
+@function fluid($max: 64, $min: 18, $isEndOfTablet: false) {
   $maxViewportWidth: $container-desktop-width;
   $minViewportWidth: 390;
-  @if ($isEndOfLaptop) {
-    $minViewportWidth: $container-laptop-width;
+  @if ($isEndOfTablet) {
+    $minViewportWidth: $container-tablet-width;
   }
 
   $maxSize: math.div($max, 16);
@@ -23,6 +23,6 @@
   );
 }
 
-@function fluid-to-laptop($max: 64, $min: 18, $isEndOfLaptop: false) {
+@function fluid-to-tablet($max: 64, $min: 18, $isEndOfTablet: false) {
   @return fluid($max, $min, true);
 }

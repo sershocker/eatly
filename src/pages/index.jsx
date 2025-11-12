@@ -1,3 +1,4 @@
+import Example from "@/components/example"
 import { Head } from "minista"
 
 export default function () {
@@ -6,7 +7,7 @@ export default function () {
       <Head>
         <title>Hello!</title>
       </Head>
-      <h1>Hello!</h1>
+      <Example />
     </>
   )
 }

@@ -1,2 +1,39 @@
 :root {
+  --color-white: #ffffff;
+  --color-black: #ffffff;
+
+  --color-background-main: #f9f9f9;
+
+  --color-purple: #6c5fbc;
+  --color-purple-5C4: #5c4eae;
+  --color-purple-615: #6155ae;
+  --color-purple-BBB: #bbb6d7;
+
+  --color-red-light: #f7c5ba;
+  --color-red: #fb471d;
+
+  --color-black-18: #18181b;
+  --color-black-20: #201f1f;
+  --color-black-32: #323142;
+
+  --color-gray-63: #636363;
+  --color-gray-67: #676767;
+  --color-gray-82: #828282;
+  --color-gray-82: #828282;
+  --color-gray-96: #969696;
+  --color-gray-99: #999999;
+
+  --color-gray-CB: #cbd5e1;
+
+  --transition-duration: 0.4s;
+
+  --font-family-base: "Poppins", sans-serif;
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-tablet-width
+    )};
+
+  --container-padding-x: 29px;
+  --container-padding-top: #{fluid(100, 84)};
 }
