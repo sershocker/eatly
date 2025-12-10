@@ -4,6 +4,8 @@
 
   --color-background-main: #f9f9f9;
 
+  --red: red;
+
   --color-purple: #6c5fbc;
   --color-purple-5C4: #5c4eae;
   --color-purple-615: #6155ae;
@@ -16,22 +18,26 @@
   --color-black-20: #201f1f;
   --color-black-32: #323142;
 
+  --color-gray-60: #606060;
   --color-gray-63: #636363;
   --color-gray-67: #676767;
   --color-gray-82: #828282;
-  --color-gray-82: #828282;
   --color-gray-96: #969696;
   --color-gray-99: #999999;
-
   --color-gray-CB: #cbd5e1;
 
-  --transition-duration: 0.4s;
+  --color-white-F9: #F9F9F9;
+
+  --transition-duration: 0.2s;
+
+  --border: solid 1.5px var(--color-gray-CB);
 
   --font-family-base: "Poppins", sans-serif;
+  --font-family-inter: "Inter", sans-serif;
 
   --container-width: #{fluid-to-laptop(
       $container-desktop-width,
-      $container-tablet-width
+      $container-laptop-width
     )};
 
   --container-padding-x: 29px;

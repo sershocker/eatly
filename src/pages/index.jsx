@@ -1,13 +1,9 @@
-import Example from "@/components/example"
-import { Head } from "minista"
+import Header from "@/layouts/Header";
 
 export default function () {
   return (
     <>
-      <Head>
-        <title>Hello!</title>
-      </Head>
-      <Example />
+        Main page
     </>
   )
 }

@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "minista",
+    "dev": "minista",
     "build": "minista build",
     "preview": "minista preview"
   },
@@ -15,12 +15,12 @@
     "postcss-pxtorem": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.93.3"
+    "sass": "^1.94.0"
   },
   "dependencies": {
-    "@a1rth/css-normalize": "^1.2.4",
+    "@a1rth/css-normalize": "^1.1.9",
     "classnames": "^2.5.1",
     "imask": "^7.6.1",
-    "swiper": "^12.0.3"
+    "swiper": "^11.1.15"
   }
 }

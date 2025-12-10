@@ -1,0 +1,28 @@
+.header {
+  padding-top: fluid(48, 33);
+
+  padding-inline: fluid(96, 31);
+
+  &__inner {
+    padding-bottom: fluid(20, 10);
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+
+  &__shift{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 104px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: fluid-to-laptop(9, 6);
+  }
+
+}

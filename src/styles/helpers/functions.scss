@@ -1,11 +1,12 @@
 @use "constants" as *;
 @use "sass:math";
 
-@function fluid($max: 64, $min: 18, $isEndOfTablet: false) {
+@function fluid($max: 64, $min: 18, $isEndOfLaptop: false) {
   $maxViewportWidth: $container-desktop-width;
   $minViewportWidth: 390;
-  @if ($isEndOfTablet) {
-    $minViewportWidth: $container-tablet-width;
+
+  @if ($isEndOfLaptop) {
+    $minViewportWidth: $container-laptop-width;
   }
 
   $maxSize: math.div($max, 16);
@@ -17,12 +18,12 @@
   $yAxisIntersections: -$minWidth * $slope + $minSize;
 
   @return clamp(
-    #{$minSize * 1rem},
-    #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
-    #{$maxSize * 1rem}
+          #{$minSize * 1rem},
+          #{$yAxisIntersections * 1rem} + #{$slope * 100vw},
+          #{$maxSize * 1rem}
   );
 }
 
-@function fluid-to-tablet($max: 64, $min: 18, $isEndOfTablet: false) {
+@function fluid-to-laptop($max: 64, $min: 18, $isEndOfLaptop: false) {
   @return fluid($max, $min, true);
 }

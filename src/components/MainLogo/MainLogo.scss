@@ -1,0 +1,16 @@
+.main-logo {
+  &__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+
+    font-family: var(--font-family-base);
+    font-weight: 600;
+    font-size: 21px;
+
+  }
+
+  &__text{
+    color: var(--color-purple);
+  }
+}
