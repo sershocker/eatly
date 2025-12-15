@@ -7,9 +7,9 @@ export const metadata = {
 export default function () {
 
 
-  return (
-    <>
-        Main page
-    </>
-  )
+    return (
+        <>
+            Menu page
+        </>
+    )
 }

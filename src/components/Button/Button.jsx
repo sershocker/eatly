@@ -4,10 +4,9 @@ import classNames from 'classnames'
 const Button = (props) => {
     const {
         className,
-        isAccent,
+        transparent,
         href,
         title,
-        slim,
         type = "button",
     } = props
 
@@ -22,10 +21,10 @@ const Button = (props) => {
     return (
         <Component
             className={classNames(className, 'button', {
-                "accent": isAccent,
-                "slim": slim,
+                "button--transparent": transparent,
             })}
             {...specificProps}
+
         >
             {title}
         </Component>

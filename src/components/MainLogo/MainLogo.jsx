@@ -7,12 +7,17 @@ const MainLogo = (props) => {
         isShort = false,
     } = props
 
+    const title = "Home"
+
     return (
-        <div
+        <a
             className={classNames('main-logo', className)}
+            href='/'
+            title={title}
+            aria-label={title}
         >
             <div className="main-logo__inner">
-                <img src="/images/logo_image.svg" alt="" className="main-logo__img"/>
+                <img src="/public/logo_image.svg" alt="" className="main-logo__img"/>
                 <span
                     className={classNames("main-logo__text",
                         {"visually-hidden": isShort}
@@ -20,7 +25,7 @@ const MainLogo = (props) => {
                     eatly
                     </span>
             </div>
-        </div>
+        </a>
     )
 }
 

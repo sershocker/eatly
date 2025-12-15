@@ -11,24 +11,24 @@
 
 .visible-tablet {
   @include tablet-above {
-    dispay: none !important;
+    display: none !important;
   }
 }
 
 .hidden-tablet {
   @include tablet {
-    dispay: none !important;
+    display: none !important;
   }
 }
 
 .visible-mobile {
   @include mobile-above {
-    dispay: none !important;
+    display: none !important;
   }
 }
 
 .hidden-mobile {
   @include mobile {
-    dispay: none !important;
+    display: none !important;
   }
 }

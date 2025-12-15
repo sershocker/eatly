@@ -2,31 +2,53 @@ import './Header.scss'
 import classNames from 'classnames'
 import MainLogo from "@/components/MainLogo";
 import Button from "@/components/Button";
+import BurgerButton from "@/components/BurgerButton";
 
 const Header = (props) => {
     const {
-        className,
+        url
     } = props
 
+    const menuItems = [
+        { title: "Menu", href: "/menu" },
+        { title: "Blog", href: "/blog" },
+        { title: "Pricing", href: "/pricing" },
+        { title: "Contact", href: "/contact" },
+    ]
+
     return (
-        <div className='header'>
+        <header className='header' data-js-overlay-menu="">
             <div className="header__inner">
-                <div className="header__shift">
-                    <MainLogo className="header__logo"/>
+                <MainLogo className="header__logo"/>
+                <dialog className="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
                     <div className="header__menu">
-                        <Button title ="Menu" slim/>
-                        <Button title ="Blog" slim/>
-                        <Button title ="Pricing" slim/>
-                        <Button title ="Contact" slim/>
-                    </div>
-                </div>
+                        <ul className="header__menu--list">
+                        {menuItems.map(({title, href}, index) => (
+                            <li className="header__menu--item" key = {index} >
+                                <a
+                                    href={href}
+                                    className={
+                                        classNames("header__menu--link", {"is-active": href === url})
+                                    }
+                                >
+                                    {title}
+                                </a>
+                            </li>
+                        ))}
+                        </ul>
+                        </div>
                 <div className="header__actions">
-                    <Button title ="Login" />
-                    <Button title ="Sign Up" isAccent/>
+                    <Button title ="Login" transparent/>
+                    <Button title ="Sign Up"/>
+
                 </div>
+                </dialog>
+                <BurgerButton className="header__burger-button visible-mobile"
+                              extraAttrs={{"data-js-overlay-menu-burger-button":""}}
+                />
             </div>
 
-        </div>
+        </header>
     )
 }
 

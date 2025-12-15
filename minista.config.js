@@ -11,7 +11,7 @@ export default defineConfig({
     outDir: "assets",
     outName: "[name]",
     images: {
-      outDir: "assets/images",
+      outDir: "assets/public",
       outName: "[name]",
       remoteName: "remote",
       optimize: {
@@ -34,7 +34,7 @@ export default defineConfig({
     },
     icons: {
       srcDir: "src/assets/icons",
-      outDir: "assets/images",
+      outDir: "assets/public",
       outName: "[dirname]",
       svgstoreOptions: {
         cleanSymbols: ["fill", "stroke", "stroke-linejoin", "stroke-width"],

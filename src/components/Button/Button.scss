@@ -4,28 +4,31 @@
 
   font-weight: 700;
   font-family: var(--font-family-inter);
-  font-size: fluid(18, 13);
-  border-radius: fluid(18, 18);
+  font-size: fluid(18, 12);
+  border-radius: fluid(15, 9);
   border: none;
-  background-color: transparent;
-  color: var(--color-gray-60);
 
-  &.slim{
+
+  white-space: nowrap;
+
+  background-color: var(--color-purple);
+  color: var(--color-white-F9);
+
+  @include hover{
+    background-color: var(--color-purple-BBB);
+    color: var(--color-white-F9);
+  }
+
+  &__slim{
     font-weight: 500;
   }
 
-  &.accent {
-
-    background-color: var(--color-purple);
-    color: var(--color-white-F9);
+  &--transparent{
+    background-color: transparent;
+    color: var(--color-gray-60);
 
     @include hover{
-      background-color: var(--color-purple-BBB);
-      color: var(--color-white-F9);
+      color: var(--color-purple-5C4);
     }
   }
-  @include hover{
-    color: var(--color-purple-5C4);
-  }
-
 }
