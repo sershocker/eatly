@@ -1,34 +1,71 @@
 .button {
+  --iconButtonHover: transparent;
+
   padding: fluid-to-laptop(17, 13) fluid-to-laptop(27, 19);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   font-weight: 700;
   font-family: var(--font-family-inter);
   font-size: fluid(18, 12);
   border-radius: fluid(15, 9);
   border: none;
-
-
   white-space: nowrap;
-
   background-color: var(--color-purple);
   color: var(--color-white-F9);
 
   @include hover{
     background-color: var(--color-purple-BBB);
     color: var(--color-white-F9);
-  }
-
-  &__slim{
-    font-weight: 500;
+    --iconButtonHover: var(--color-purple-BBB);
   }
 
   &--transparent{
     background-color: transparent;
     color: var(--color-gray-60);
 
+    &:has(.button__icon:only-child) {
+      position: relative;
+      z-index: 1;
+      @include square(fluid(22, 16));
+
+      padding: 0;
+
+      &:before {
+        transition-duration: var(--transition-duration);
+        background-color: var(--iconButtonHover);
+        padding: fluid(22, 16);
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: '';
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+        cursor: pointer;
+
+
+      }
+
+      .button__icon {
+
+        --iconSize: #{fluid-to-laptop(22, 16)};
+      }
+    }
+
     @include hover{
       color: var(--color-purple-5C4);
+    }
+  }
+
+  &__icon{
+    color: var(--color-black-08);
+    &--accent{
+      color: var(--color-purple);
     }
   }
 }

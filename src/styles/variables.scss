@@ -1,6 +1,6 @@
 :root {
   --color-white: #ffffff;
-  --color-black: #ffffff;
+  --color-black: #000000;
 
   --color-background-main: #f9f9f9;
 
@@ -14,6 +14,7 @@
   --color-red-light: #f7c5ba;
   --color-red: #fb471d;
 
+  --color-black-08: #081420;
   --color-black-18: #18181b;
   --color-black-20: #201f1f;
   --color-black-28: #282828;
@@ -28,7 +29,9 @@
   --color-gray-CB: #cbd5e1;
 
   --color-white-F9: #F9F9F9;
+  --color-white-EA: #EAEAEA;
 
+  --color-white-opacity: #F9F9F9A0;
   --color-shadow: #32314240;
 
   --shadow: var(--color-shadow) 0px 10px 20px 5px;

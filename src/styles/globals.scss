@@ -91,6 +91,10 @@ a {
   }
 }
 
+p {
+  color: var(--color-gray-99);
+}
+
 :focus-visible {
   @include focus-visible;
 }

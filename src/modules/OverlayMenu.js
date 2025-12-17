@@ -14,10 +14,10 @@ class OverlayMenu {
         this.rootElement = document.querySelector(this.selectors.root);
         this.dialogElement = this.rootElement.querySelector(this.selectors.overlay);
         this.burgerButtonElement = this.rootElement.querySelector(this.selectors.button);
+        this.overlayState = this.burgerButtonElement.classList.contains("is-active");
+
 
         this.bindEvents();
-        console.log("Overlay Menu");
-
     }
 
     burgerButtonClick = ()=> {
@@ -25,10 +25,17 @@ class OverlayMenu {
         this.dialogElement.open = !this.dialogElement.open;
         document.documentElement.classList.toggle(this.stateClasses.isLock);
 
+        this.overlayState = this.burgerButtonElement.classList.contains("is-active");
+
     }
 
     bindEvents() {
         this.burgerButtonElement.addEventListener("click", this.burgerButtonClick);
+        window.onresize = () =>{
+            if(window.innerWidth > 768 &&  this.overlayState){
+                this.burgerButtonClick();
+            }
+        };
     }
 
 }
