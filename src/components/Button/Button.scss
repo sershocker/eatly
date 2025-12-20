@@ -1,5 +1,6 @@
 .button {
   --iconButtonHover: transparent;
+  --buttonFontWeight: 500;
 
   padding: fluid-to-laptop(17, 13) fluid-to-laptop(27, 19);
   cursor: pointer;
@@ -7,10 +8,12 @@
   align-items: center;
   justify-content: center;
 
-  font-weight: 700;
-  font-family: var(--font-family-inter);
+  font-weight: var(--buttonFontWeight);
+  font-family: inherit;
   font-size: fluid(18, 12);
-  border-radius: fluid(15, 9);
+  border-radius: fluid(26, 20);
+  corner-shape: var(--corner-shape);
+  //corner-shape: superellipse(-1.7);
   border: none;
   white-space: nowrap;
   background-color: var(--color-purple);
@@ -60,6 +63,12 @@
     @include hover{
       color: var(--color-purple-5C4);
     }
+  }
+
+  &--bordered{
+    border: 1.5px solid var(--color-purple-6C5);
+    color: var(--color-purple-6C5);
+
   }
 
   &__icon{

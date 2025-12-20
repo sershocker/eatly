@@ -141,5 +141,10 @@ export default defineConfig({
       indent_size: 2,
     },
   },
-  vite: {},
+    vite: {
+        preview: {
+            host: "192.168.100.129",
+            port: 5173,
+        },
+    },
 })

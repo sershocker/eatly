@@ -11,6 +11,8 @@ const Button = (props) => {
         iconName,
         label,
         iconAccent,
+        bordered,
+        fontWeight = 500,
         isLabelHidden = false,
         iconPosition = "before",
         type = "button",
@@ -27,6 +29,9 @@ const Button = (props) => {
 
     const specificProps = isLink ? linkProps : buttonProps;
 
+    const styleFont = {fontWeight: fontWeight};
+
+
     const iconComponent = iconName &&(
         <Icon
             className={classNames("button__icon", {
@@ -41,6 +46,7 @@ const Button = (props) => {
         <Component
             className={classNames(className, 'button', {
                 "button--transparent": transparent,
+                "button--bordered": bordered,
             })}
             title={title}
             aria-label={title}
@@ -49,7 +55,7 @@ const Button = (props) => {
 
         >
             {iconPosition === 'before' && iconComponent}
-            {!isLabelHidden && (<span className="button__label">{label}</span>)}
+            {!isLabelHidden && (<span className="button__label" style = {styleFont}>{label}</span>)}
             {iconPosition === 'after' && iconComponent}
 
         </Component>

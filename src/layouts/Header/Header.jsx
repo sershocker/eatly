@@ -17,8 +17,8 @@ const Header = (props) => {
     ]
 
     return (
-        <header className='header' data-js-overlay-menu="">
-            <div className="header__inner container">
+        <header className='header container' data-js-overlay-menu="">
+            <div className="header__inner">
                 <MainLogo className="header__logo"/>
                 <dialog className="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
                     <div className="header__menu">
@@ -38,8 +38,8 @@ const Header = (props) => {
                         </ul>
                         </div>
                 <div className="header__actions">
-                    <Button label ="Login" transparent/>
-                    <Button label ="Sign Up" />
+                    <Button label ="Login" fontWeight={700} transparent/>
+                    <Button label ="Sign Up" fontWeight={700} />
 
                 </div>
                 </dialog>

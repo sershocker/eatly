@@ -40,13 +40,13 @@ h1,
 }
 h2,
 .h2 {
-  @include fluid-text(51, 46);
+  @include fluid-text(51, 30);
   font-weight: 700;
   color: var(--color-black-18);
 }
 h3,
 .h3 {
-  @include fluid-text(45, 46);
+  @include fluid-text(35, 23);
   font-weight: 600;
   color: var(--color-black-32);
 }
@@ -93,6 +93,7 @@ a {
 
 p {
   color: var(--color-gray-99);
+  font-size: fluid(18, 11);
 }
 
 :focus-visible {

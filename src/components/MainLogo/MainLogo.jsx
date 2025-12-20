@@ -1,5 +1,6 @@
 import './MainLogo.scss'
 import classNames from 'classnames'
+import {Image} from "minista";
 
 const MainLogo = (props) => {
     const {
@@ -17,7 +18,7 @@ const MainLogo = (props) => {
             aria-label={title}
         >
             <div className="main-logo__inner">
-                <img src="/logo_image.svg" alt="" className="main-logo__img"/>
+                <img src="logo_image.svg" alt="Logo" className="main-logo__img"/>
                 <span
                     className={classNames("main-logo__text",
                         {"visually-hidden": isShort}

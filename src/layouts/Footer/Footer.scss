@@ -1,8 +1,8 @@
 .footer {
   background-color: var(--color-white-EA);
-  padding-top: fluid(48, 33);
+  padding-top: fluid(96, 55);
   padding-bottom: fluid(81, 36);
-  padding-inline: fluid(90, 31);
+
 
   &__inner{
     position: relative;
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 44px;
+    padding-bottom: 44px;
     row-gap: 53px;
 
     @include mobile{
@@ -63,8 +63,8 @@
   &__soc1als{
     @include mobile {
       position: absolute;
-      right: 0;
-      top: 12px;
+      right: var(--container-padding-x);
+      top: 16px;
     }
   }
 }
