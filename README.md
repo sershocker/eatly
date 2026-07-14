@@ -4,7 +4,16 @@
 
 > [!WARNING]
 > Project in progress
+# Eatly — Food Delivery Frontend Project
 
-> Multipage website by Figma's project 
+Eatly is a modern, responsive frontend web application designed for a food delivery or restaurant platform.
 
-[Original Figma project](https://www.figma.com/design/jHDVsiVR8JBpkMsYehKCEj/Eatly?node-id=1-11265&t=mHIoNFjoqlUePitg-0)
+Built using cutting-edge frontend tooling, it focuses on high performance, clean structure, and optimized static site generation.
+
+## 🚀 Tech Stack
+
+- **[Vite](https://vitejs.dev/)** – Next-generation frontend tooling for ultra-fast development.
+- **[Minista](https://minista.org/)** – A powerful static site generator (SSG) built for Vite, enabling seamless component-based layouts (JSX/TSX).
+- **HTML5 / CSS3 / JavaScript (ES6+)**
+
+[Original Figma template](https://www.figma.com/design/jHDVsiVR8JBpkMsYehKCEj/Eatly?node-id=1-11265&t=mHIoNFjoqlUePitg-0)
